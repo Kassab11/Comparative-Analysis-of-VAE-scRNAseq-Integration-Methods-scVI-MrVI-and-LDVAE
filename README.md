@@ -31,6 +31,15 @@ matplotlib ==	3.x	Plotting and visualization
 
 Full list of packages: see environment.yml
 
+## Dataset
+Name: Human Immune Cell Dataset
+
+Source: Open Problems in Single-Cell Analysis
+
+DOI: 10.1038/s41592-021-01336-8
+
+
+
 ## Project Structure
 
 ```bash
