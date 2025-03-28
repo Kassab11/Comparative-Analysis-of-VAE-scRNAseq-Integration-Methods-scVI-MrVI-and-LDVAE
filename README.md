@@ -16,7 +16,7 @@ The goal is to assess and compare integration performance using:
 
 ```bash
 .
-├── notebooks/                # Jupyter notebooks for training and evaluation
+├── notebooks/                # Google Drive Link to Jupyter notebooks for training and evaluation (size>25MB)
 ├── scripts/                  # Python scripts (in progress)
 ├── results/                  # Evaluation results and plots
 ├── environment.yml           # Reproducible environment definition (conda)
