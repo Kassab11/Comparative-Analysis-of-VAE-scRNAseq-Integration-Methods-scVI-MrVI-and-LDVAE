@@ -8,7 +8,7 @@ This repository contains code, data references, and results for a benchmarking s
 The goal is to assess and compare integration performance using:
 - **4 batch correction metrics**
 - **7 biological conservation metrics**
-- **UMAP and PCA visualizations**
+- **UMAP and t-SNE visualizations**
 - **Scalability (training time, GPU usage)**
 - **Ease of use / usability**
 
