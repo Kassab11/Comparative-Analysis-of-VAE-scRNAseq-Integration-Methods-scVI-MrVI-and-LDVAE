@@ -13,16 +13,23 @@ The goal is to assess and compare integration performance using:
 - **Ease of use / usability**
 
 
-📦 Main Dependencies
+## Main Dependencies
 Package	Version	Description
-Python	3.12.2	Programming language
+Python ==	3.12.2	Programming language
+
 scvi-tools	1.3.0	Variational inference for scRNA-seq
-Scanpy	1.11.0	Single-cell data analysis
-PyTorch	2.6.0+cu124	Deep learning framework
-JAX	0.4.35	Accelerated numerical computing (used for MrVI)
-scIB	1.1.7	Integration benchmarking metrics
-matplotlib	3.x	Plotting and visualization
-💡 Full list of packages: see environment.yml
+
+Scanpy ==	1.11.0	Single-cell data analysis
+
+PyTorch ==	2.6.0+cu124	Deep learning framework
+
+JAX == 0.4.35	Accelerated numerical computing (used for MrVI)
+
+scIB ==	1.1.7	Integration benchmarking metrics
+
+matplotlib ==	3.x	Plotting and visualization
+
+Full list of packages: see environment.yml
 
 ## Project Structure
 
