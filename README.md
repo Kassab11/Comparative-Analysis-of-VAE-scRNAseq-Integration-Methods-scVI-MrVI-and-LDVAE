@@ -18,7 +18,19 @@ The goal is to assess and compare integration performance using:
 - **Scalability (training time, GPU usage)**
 - **Ease of use / usability**
 
+## Example usage of pipeline.py
+python run_pipeline.py \
+  --model scvi \
+  --dataset data/imyoo_capillary_blood_samples_76535_pbmcs.h5ad \
+  --x_layer counts \
+  --batch_key batch \
+  --cell_type_key cell_type_level_3 \
+  --n_hidden 128 \
+  --n_latent 30 \
+  --n_layers 2 \
+  --use_hvg
 
+Please note, scripts include the full runs in jupyter notebook
 ## Main Dependencies
 Package	Version	Description
 Python ==	3.12.2	Programming language
@@ -65,8 +77,9 @@ This study utilizes three publicly released single-cell RNA-seq datasets, each r
 
 ```bash
 .
-├── notebooks/                # Google Drive Link to Jupyter notebooks for training and evaluation (size>25MB)
-├── scripts/                  # Python scripts (in progress)
-├── results/                  # Evaluation results and plots
-├── environment.yml           # Reproducible environment definition (conda)
-└── README.md                 # This file
+├── notebooks/               # Jupyter notebooks for model training, evaluation, and visualization
+├── scripts/                 # Python scripts (under development; to be refactored for modularity and reproducibility)
+├── Results/                 # Final evaluation metrics, plots, and result tables
+├── environment.yml          # Conda environment file for reproducibility
+├── pipeline.py              # Main benchmarking pipeline (to be refactored for improved clarity and usability)
+└── README.md                # Project documentation and usage instructions
