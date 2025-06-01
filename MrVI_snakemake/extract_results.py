@@ -2,7 +2,7 @@ import os
 import pandas as pd
 import numpy as np
 
-# === CONFIGURATION ===
+# CONFIGURATION 
 root_dir = "/home/kassab/Desktop/CB803_project/MrVI_snakemake/results"
 selected_datasets = ["imyoo_capillary_blood_samples_76535_pbmcs_full", "imyoo_capillary_blood_samples_76535_pbmcs_hvg"]
 metric_filename = "metrics.txt"  # Be sure the filename is correct!
@@ -32,7 +32,7 @@ def safe_float(val):
 
 rows = []
 
-# === PROCESS EACH DATASET ===
+
 for dataset in selected_datasets:
     dataset_path = os.path.join(root_dir, dataset)
     if not os.path.isdir(dataset_path):
@@ -82,7 +82,7 @@ for dataset in selected_datasets:
                         if line.startswith(key):
                             metrics_values[key] = safe_float(line.split()[-1])
 
-        # Append only after parsing the whole file
+
         row = [
             method, hyperparams, output, features, reference_name,
             training_time, memory_used, "", "",
@@ -94,7 +94,7 @@ for dataset in selected_datasets:
         ]
         rows.append(row)
 
-# === SAVE OUTPUT ===
+
 df = pd.DataFrame(rows, columns=columns)
 output_file = os.path.join(root_dir, f"{out_filename}.xlsx")
 df.to_excel(output_file, index=False)
