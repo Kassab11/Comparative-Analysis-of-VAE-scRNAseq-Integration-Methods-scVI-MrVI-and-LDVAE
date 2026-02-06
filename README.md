@@ -1,4 +1,4 @@
-# Comparative-Analysis-of-VAE-scRNAseq-Integration-Methods-scVI-MrVI-and-LDVAE
+# A-hyperparameter-benchmark-of-VAE-based-methods-for-scRNA-seq-batch-integration
 
 
 This repository contains code, data references, and results for a benchmarking study comparing three variational autoencoder (VAE) models—**scVI**, **MrVI**, and **LDVAE**—for batch integration in single-cell RNA sequencing (scRNA-seq) data. The evaluation is conducted across three biologically and technically diverse datasets:
